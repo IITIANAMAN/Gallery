@@ -40,7 +40,7 @@ fun MainScreen(modifier: Modifier = Modifier, navController: NavController, view
             )
 
         }) {
-            val folderNames = listOf("Camera","WhatsApp", "Download", "Screenshots", "Telegram", "Favourite","All")
+            val folderNames = listOf("All","Camera","WhatsApp", "Download", "Screenshots", "Telegram", "Favourite")
 
             LazyVerticalGrid(
                 columns = GridCells.Fixed(3),
