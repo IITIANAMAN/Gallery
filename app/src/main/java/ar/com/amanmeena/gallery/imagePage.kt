@@ -11,9 +11,11 @@ import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -49,6 +51,12 @@ fun ImagePage(viewModel: MainViewModel, startIndex: Int) {
                     )
                 }
             )
+            IconButton(onClick = {
+
+            }) {
+                Icon(imageVector = Icons.Default.Edit, contentDescription = "Image edit")
+
+            }
         },
         bottomBar = {
             BottomAppBar(
